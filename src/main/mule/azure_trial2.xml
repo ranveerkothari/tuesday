@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="azure_trial2Flow" doc:id="84fd39d1-a93a-498d-ba65-1ed5aa373505" >
 		<http:listener doc:name="Listener" doc:id="652ca179-07e4-43a7-be6b-ba4a31b171af" config-ref="HTTP_Listener_config" path="/azure1"/>
-		<logger level="INFO" doc:name="Logger" doc:id="39513790-d235-47a5-9c48-52126b480cce" message="logger"/>
+		<set-payload value="payload" doc:name="Set Payload" doc:id="54d7f861-84ae-45d5-99f8-79cb8cad629c" />
 	</flow>
 </mule>

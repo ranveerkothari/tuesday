@@ -33,6 +33,27 @@
 				<configuration>
 				</configuration>
 			</plugin>
+			<plugin>
+  <groupId>org.mule.tools.maven</groupId>
+  <artifactId>mule-maven-plugin</artifactId>
+  <version>3.4.2</version>
+  <extensions>true</extensions>
+  <configuration>
+    <cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <muleVersion>4.3.0</muleVersion>
+      <username>trishla__k</username>
+      <password>RanveerKothari@1</password>
+      <applicationName>azure-demo</applicationName>
+      <environment>Sandbox</environment>
+      <workers>1</workers>
+      <workerType>micro</workerType>
+      <properties>
+        <key>value</key>
+      </properties>
+    </cloudHubDeployment>
+  </configuration>
+</plugin>
 		</plugins>
 	</build>
 
